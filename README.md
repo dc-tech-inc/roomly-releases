@@ -1,107 +1,51 @@
 <img src="icon-256.png" width="96" align="right" alt="">
 
-# Baixar o Roomly para computador
+# Roomly — downloads
 
-Este repositório serve **só para hospedar os arquivos de instalação**. Não tem
-código aqui.
+Roomly is a real-time 3D social platform from [DC TECH INC](https://dctech.live),
+available in the browser, on desktop and on Android. This repository hosts the
+installers only; it contains no source code.
 
-### → [**Clique aqui para baixar a versão mais recente**](https://github.com/dc-tech-inc/roomly-releases/releases/latest)
+Web version, nothing to install: **https://roomly.life/app**
 
-Na página que abrir, procure a seção **Assets** e escolha o arquivo do seu
-sistema, usando a tabela abaixo.
+## Download
 
----
+| Platform | File | Where |
+| --- | --- | --- |
+| Windows 10/11 | `roomly-desktop-setup.exe` | [v1.8.0](https://github.com/dc-tech-inc/roomly-releases/releases/tag/v1.8.0) (latest) |
+| macOS, Apple Silicon | `Roomly-1.8.0-arm64.dmg` | [v1.8.0](https://github.com/dc-tech-inc/roomly-releases/releases/tag/v1.8.0) |
+| macOS, Intel | `Roomly-1.8.0-x64.dmg` | [v1.8.0](https://github.com/dc-tech-inc/roomly-releases/releases/tag/v1.8.0) |
+| Linux x86_64, any distro | `Roomly-1.7.0-anylinux-x86_64.AppImage` | [v1.7.0](https://github.com/dc-tech-inc/roomly-releases/releases/tag/v1.7.0) |
+| Linux x86_64, Debian/Ubuntu | `roomly-desktop_1.7.0_amd64.deb` | [v1.7.0](https://github.com/dc-tech-inc/roomly-releases/releases/tag/v1.7.0) |
+| Linux x86_64, Flatpak | `life.roomly.RoomlyDesktop_stable_x86_64.flatpak` | [v1.7.0](https://github.com/dc-tech-inc/roomly-releases/releases/tag/v1.7.0) |
+| Linux ARM64 | `Roomly-1.7.0-anylinux-aarch64.AppImage`, `roomly-desktop_1.7.0_arm64.deb`, `life.roomly.RoomlyDesktop_stable_aarch64.flatpak` | [v1.7.0](https://github.com/dc-tech-inc/roomly-releases/releases/tag/v1.7.0) |
+| Android | `Roomly-1.0-android.apk` (sideload, not on Google Play) | [mobile-v1.0](https://github.com/dc-tech-inc/roomly-releases/releases/tag/mobile-v1.0) |
 
-## Qual arquivo eu baixo?
+Linux builds are currently only available up to v1.7.0; v1.8.0 ships Windows
+and macOS files only.
 
-### 🪟 Windows
+Not sure which Mac you have? Apple menu → **About This Mac**: "Apple M1/M2/..."
+is Apple Silicon, "Intel" is Intel.
 
-**Baixe `roomly-desktop-setup.exe`.** É só isso — um arquivo, clique duplo,
-pronto. Serve para Windows 10 e 11.
+## Unsigned installers
 
-### 🍎 Mac
+The installers are not code-signed yet, so Windows and macOS show a warning.
 
-Depende do processador do seu Mac. Para descobrir em 5 segundos:
+- **Windows (SmartScreen):** click **More info**, then **Run anyway**.
+- **macOS (Gatekeeper):** right-click the app, choose **Open**, then **Open**
+  again in the dialog. Only needed the first time.
 
-> Clique na 🍎 no canto superior esquerdo → **Sobre este Mac**.
-> Se aparecer **Apple M1, M2, M3** ou similar, é Apple Silicon.
-> Se aparecer **Intel**, é Intel.
+## Auto-update
 
-| Seu Mac | Arquivo |
-| --- | --- |
-| Apple Silicon (M1/M2/M3/M4) | `Roomly-<versão>-arm64.dmg` |
-| Intel | `Roomly-<versão>-x64.dmg` |
+The desktop app updates itself through
+[`update.electronjs.org`](https://update.electronjs.org), which reads the
+latest release from the public GitHub API. That is why this repository is
+public. The `RELEASES`, `.nupkg`, `.zsync` and darwin `.zip` files are
+updater files; you do not need to download them.
 
-Na dúvida entre os dois: Macs vendidos a partir de **2021** são quase sempre
-Apple Silicon.
+## License and credits
 
-### 🐧 Linux
-
-Se você não faz ideia de qual escolher, **baixe o `.AppImage`** — ele funciona
-em qualquer distribuição, não precisa instalar nada, é só dar permissão de
-execução e abrir.
-
-| Como você prefere instalar | Arquivo |
-| --- | --- |
-| **Não sei / qualquer distro** | `Roomly-<versão>-anylinux-x86_64.AppImage` |
-| Ubuntu, Debian, Mint, Pop!_OS | `roomly-desktop_<versão>_amd64.deb` |
-| Fedora, ou quem já usa Flatpak | `life.roomly.RoomlyDesktop_stable_x86_64.flatpak` |
-
-Nos três casos, se o seu computador for **ARM** (Raspberry Pi, alguns
-notebooks novos), troque `x86_64` por `aarch64` e `amd64` por `arm64`. Se você
-não sabe o que é isso, é porque não é o seu caso — use a versão normal.
-
----
-
-## "O Windows/Mac disse que o arquivo é perigoso"
-
-**Isso é esperado e o Roomly não é um vírus.** Os instaladores ainda não têm
-assinatura digital — que é um certificado pago que diz ao sistema quem
-publicou o programa. Sem ele, Windows e macOS avisam sobre qualquer programa,
-inclusive os legítimos.
-
-**No Windows**, vai aparecer uma tela azul do *SmartScreen* dizendo
-"O Windows protegeu o computador":
-
-1. Clique em **Mais informações**
-2. Clique em **Executar assim mesmo**
-
-**No Mac**, vai dizer que o app "não pôde ser aberto porque é de um
-desenvolvedor não identificado":
-
-1. **Não** dê dois cliques no app
-2. Clique nele com o **botão direito** → **Abrir**
-3. Na caixa que aparecer, clique em **Abrir** de novo
-
-Só é preciso fazer isso **na primeira vez**. Depois abre normal.
-
----
-
-## Perguntas rápidas
-
-**Preciso baixar de novo quando sair versão nova?**
-Não. O Roomly se atualiza sozinho.
-
-**E aqueles outros arquivos na lista?**
-Os `RELEASES`, `.nupkg`, `.zsync` e `.zip` são usados pela atualização
-automática. Você não precisa baixar nenhum deles.
-
-**Quanto ocupa?**
-Entre 85 MB e 135 MB, dependendo da plataforma.
-
-**Não tenho como instalar nada nesta máquina.**
-O Roomly funciona no navegador, sem instalar: **https://roomly.life/app**
-
----
-
-## Detalhes técnicos
-
-O aplicativo se atualiza pelo `update.electronjs.org`, que lê a release mais
-recente pela API pública do GitHub, sem autenticação — por isso este
-repositório é público e separado do código.
-
-O Roomly para Desktop é distribuído sob a **GNU Affero General Public License
-v3.0**. É um fork de
-[`stoatchat/for-desktop`](https://github.com/stoatchat/for-desktop), de Pawel
-Makles. O código-fonte está em
-[`dc-tech-inc/roomly-desktop`](https://github.com/dc-tech-inc/roomly-desktop).
+Roomly Desktop is distributed under the GNU Affero General Public License
+v3.0. It is a fork of
+[`stoatchat/for-desktop`](https://github.com/stoatchat/for-desktop) by Pawel
+Makles.

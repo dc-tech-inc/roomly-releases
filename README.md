@@ -32,8 +32,10 @@ is Apple Silicon, "Intel" is Intel.
 The installers are not code-signed yet, so Windows and macOS show a warning.
 
 - **Windows (SmartScreen):** click **More info**, then **Run anyway**.
-- **macOS (Gatekeeper):** right-click the app, choose **Open**, then **Open**
-  again in the dialog. Only needed the first time.
+- **macOS (Gatekeeper):** try to open the app once and dismiss the warning. Then open
+  **System Settings → Privacy & Security**, scroll down, click **Open Anyway**,
+  and confirm with **Open**. Only needed the first time. See Apple's guide,
+  [Safely open apps on your Mac](https://support.apple.com/en-us/102445).
 
 ## Auto-update
 

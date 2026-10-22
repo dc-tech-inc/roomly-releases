@@ -1,6 +1,6 @@
 <img src="icon-256.png" width="96" align="right" alt="">
 
-# Roomly — downloads
+# Roomly downloads
 
 Roomly is a real-time 3D social platform from [DCtech.](https://dctech.live),
 available in the browser, on desktop and on Android. This repository hosts the
@@ -51,8 +51,8 @@ updater files; you do not need to download them.
 Each release attaches `roomly-desktop-<version>-src.tar.gz`, the complete
 corresponding source of the Roomly Desktop app in that release, licensed under
 the GNU AGPL-3.0. Each archive is made with `git archive` from the source commit
-that built the binaries. It has the sources, build scripts, `forge.config.ts`,
-the GitHub workflows, the lockfile and the build guide in `README.md`. It has no
+that built the binaries, so it has the sources, build scripts, `forge.config.ts`,
+the GitHub workflows, the lockfile and the build guide in `README.md`, but no
 git history. v1.5.3 mixes several commits; its release notes map each asset to
 its commit.
 

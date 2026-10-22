@@ -2,7 +2,7 @@
 
 # Roomly — downloads
 
-Roomly is a real-time 3D social platform from [DC TECH INC](https://dctech.live),
+Roomly is a real-time 3D social platform from [DCtech.](https://dctech.live),
 available in the browser, on desktop and on Android. This repository hosts the
 installers only; the source code for each release is attached to that release
 (see [Source code](#source-code)).

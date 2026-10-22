@@ -20,7 +20,7 @@ Web version, nothing to install: **https://roomly.life/app**
 | Linux x86_64, Debian/Ubuntu | `roomly-desktop_1.7.0_amd64.deb` | [v1.7.0](https://github.com/dc-tech-inc/roomly-releases/releases/tag/v1.7.0) |
 | Linux x86_64, Flatpak | `life.roomly.RoomlyDesktop_stable_x86_64.flatpak` | [v1.7.0](https://github.com/dc-tech-inc/roomly-releases/releases/tag/v1.7.0) |
 | Linux ARM64 | `Roomly-1.7.0-anylinux-aarch64.AppImage`, `roomly-desktop_1.7.0_arm64.deb`, `life.roomly.RoomlyDesktop_stable_aarch64.flatpak` | [v1.7.0](https://github.com/dc-tech-inc/roomly-releases/releases/tag/v1.7.0) |
-| Android | `Roomly-1.0-android.apk` (sideload, not on Google Play) | [mobile-v1.0](https://github.com/dc-tech-inc/roomly-releases/releases/tag/mobile-v1.0) |
+| Android | [`Roomly-android.apk`](https://github.com/dc-tech-inc/roomly-releases/releases/download/android/Roomly-android.apk) (sideload; always the newest build) | [android](https://github.com/dc-tech-inc/roomly-releases/releases/tag/android) |
 
 Linux builds are currently only available up to v1.7.0; v1.8.0 ships Windows
 and macOS files only.
